@@ -21,7 +21,7 @@ const PaymentSucess = () => {
   // console.log(paymentId)
   const dispatch = useDispatch()
   const user = useSelector(selectUser)
-  const [updatePayment, setUpdatePayment] = useState()
+  const [updatePayment, setUpdatePayment] = useState() 
   const { enqueueSnackbar } = useSnackbar();
   const [querys, setQuerys] = useState({ "$and": [{ "userId": user && user.currentUser && user.currentUser.data && user.currentUser.data.id }, { "paymentId":  paymentId }] })
   const [sort, setSort] = useState({ name: 1 })
